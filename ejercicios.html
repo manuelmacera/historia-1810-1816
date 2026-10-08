@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ejercicios 1810–1816</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;800&family=Patrick+Hand&display=swap">
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<script src="common.js"></script>
+<script>
+const PAGE = {
+ "title": {
+  "es": "De Mayo a la <mark>Independencia</mark>"
+ },
+ "langs": [
+  "es"
+ ],
+ "mascot": false,
+ "starsKey": "stars5d",
+ "parts": [
+  {
+   "type": "order",
+   "name": {
+    "es": "Línea de tiempo"
+   },
+   "intro": {
+    "es": "Ordená los hechos: del más antiguo al más reciente."
+   },
+   "items": [
+    {
+     "label": {
+      "es": "Napoleón invade España y saca del trono a Fernando VII"
+     }
+    },
+    {
+     "label": {
+      "es": "Revolución de Mayo: se forma la Primera Junta"
+     }
+    },
+    {
+     "label": {
+      "es": "Se forma el Primer Triunvirato"
+     }
+    },
+    {
+     "label": {
+      "es": "Belgrano crea la bandera"
+     }
+    },
+    {
+     "label": {
+      "es": "Se reúne la Asamblea del Año XIII"
+     }
+    },
+    {
+     "label": {
+      "es": "Posadas, primer Director Supremo"
+     }
+    },
+    {
+     "label": {
+      "es": "Derrota de Sipe Sipe: se pierde el Alto Perú"
+     }
+    },
+    {
+     "label": {
+      "es": "Congreso de Tucumán: Declaración de la Independencia"
+     }
+    }
+   ],
+   "after": [
+    {
+     "q": {
+      "es": "Los años"
+     },
+     "lines": {
+      "es": [
+       "1808: Napoleón invade España y saca del trono a Fernando VII",
+       "1810: Revolución de Mayo: se forma la Primera Junta",
+       "1811: Se forma el Primer Triunvirato",
+       "1812: Belgrano crea la bandera",
+       "1813: Se reúne la Asamblea del Año XIII",
+       "1814: Posadas, primer Director Supremo",
+       "1815: Derrota de Sipe Sipe: se pierde el Alto Perú",
+       "1816: Congreso de Tucumán: Declaración de la Independencia"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "name": {
+    "es": "¿Por qué pasó?"
+   },
+   "intro": {
+    "es": "Elegí la causa correcta."
+   },
+   "items": [
+    {
+     "prompt": {
+      "es": "¿Por qué las ciudades españolas formaron juntas de gobierno?"
+     },
+     "options": [
+      {
+       "es": "No reconocían a José Bonaparte: lo consideraban un rey ilegítimo"
+      },
+      {
+       "es": "Querían independizarse de España"
+      },
+      {
+       "es": "Napoleón les ordenó formarlas"
+      }
+     ],
+     "answer": 0,
+     "explain": {
+      "es": "Gobernaban en nombre de Fernando VII, el rey destituido."
+     }
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué se disolvió la Junta Central de Sevilla?"
+     },
+     "options": [
+      {
+       "es": "En 1810 los ejércitos de Napoleón invadieron toda la península"
+      },
+      {
+       "es": "Fernando VII volvió al trono"
+      },
+      {
+       "es": "Los criollos de Buenos Aires la rechazaron"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué el Cabildo Abierto decidió reemplazar al virrey?"
+     },
+     "options": [
+      {
+       "es": "La junta que lo había nombrado ya no existía, así que su autoridad había terminado"
+      },
+      {
+       "es": "Cisneros quería volver a España"
+      },
+      {
+       "es": "Lo ordenó el rey Fernando VII"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué la Primera Junta reunía abogados criollos, militares, un sacerdote y comerciantes españoles?"
+     },
+     "options": [
+      {
+       "es": "Para sumar el apoyo de distintos grupos de la sociedad"
+      },
+      {
+       "es": "Porque así lo exigía el rey"
+      },
+      {
+       "es": "Porque eran los únicos que sabían leer"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué era tan difícil construir una nación?"
+     },
+     "options": [
+      {
+       "es": "No existía la idea de nación, las ciudades tenían peso propio y la población era muy diversa"
+      },
+      {
+       "es": "Porque nadie apoyaba la revolución"
+      },
+      {
+       "es": "Porque España ya había reconocido la independencia"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué el poder se concentró cada vez en menos manos?"
+     },
+     "options": [
+      {
+       "es": "La guerra contra los realistas exigía decisiones urgentes"
+      },
+      {
+       "es": "Las provincias lo pidieron"
+      },
+      {
+       "es": "Así lo propuso Artigas"
+      }
+     ],
+     "answer": 0,
+     "explain": {
+      "es": "Esto se llama centralización del poder."
+     }
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué la Asamblea del Año XIII no declaró la independencia?"
+     },
+     "options": [
+      {
+       "es": "Sus grupos no se ponían de acuerdo, sobre todo con los diputados de Artigas"
+      },
+      {
+       "es": "Porque ya se había declarado en 1810"
+      },
+      {
+       "es": "Porque San Martín se oponía"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué fue tan grave perder Potosí en 1815?"
+     },
+     "options": [
+      {
+       "es": "Su plata sostenía a los ejércitos patriotas"
+      },
+      {
+       "es": "Porque allí estaba el gobierno"
+      },
+      {
+       "es": "Porque era la capital del virreinato"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué se convocó el Congreso de Tucumán?"
+     },
+     "options": [
+      {
+       "es": "Fernando VII volvió al trono, envió tropas y la revolución estaba en peligro"
+      },
+      {
+       "es": "La Asamblea ya había dictado la Constitución"
+      },
+      {
+       "es": "Artigas lo pidió"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "¿Por qué San Martín quería declarar la independencia cuanto antes?"
+     },
+     "options": [
+      {
+       "es": "Sin una declaración, los patriotas eran rebeldes y España podía volver a dominar en forma legítima"
+      },
+      {
+       "es": "Quería ser rey de las Provincias Unidas"
+      },
+      {
+       "es": "El Congreso no le daba soldados"
+      }
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "name": {
+    "es": "Encontrá el error"
+   },
+   "intro": {
+    "es": "Cada oración tiene un error. ¿Cuál es la versión corregida?"
+   },
+   "items": [
+    {
+     "prompt": {
+      "es": "“La centralización del poder se dio desde el comienzo de la Revolución de Mayo.”"
+     },
+     "options": [
+      {
+       "es": "El poder se fue concentrando de a poco: Junta, Triunvirato y, en 1814, Director Supremo"
+      },
+      {
+       "es": "La centralización empezó recién en 1820"
+      },
+      {
+       "es": "Nunca hubo centralización del poder"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "“La Asamblea del Año XIII declaró la abolición de la esclavitud.”"
+     },
+     "options": [
+      {
+       "es": "Declaró la libertad de vientres: los hijos de esclavas nacían libres"
+      },
+      {
+       "es": "Declaró la independencia"
+      },
+      {
+       "es": "Prohibió el comercio con otros países"
+      }
+     ],
+     "answer": 0,
+     "explain": {
+      "es": "La compraventa de esclavos siguió existiendo."
+     }
+    },
+    {
+     "prompt": {
+      "es": "“Con la batalla de Sipe Sipe, los patriotas retuvieron el Alto Perú.”"
+     },
+     "options": [
+      {
+       "es": "Con Sipe Sipe, en 1815, los patriotas perdieron definitivamente el Alto Perú"
+      },
+      {
+       "es": "Con Sipe Sipe los patriotas conquistaron Lima"
+      },
+      {
+       "es": "Sipe Sipe fue una batalla de 1810"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "“La Primera Junta fue el primer gobierno de la nación argentina.”"
+     },
+     "options": [
+      {
+       "es": "Fue el primer gobierno patrio; la idea de nación todavía no existía"
+      },
+      {
+       "es": "Fue el último gobierno del virrey"
+      },
+      {
+       "es": "La formaron solo militares"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "“Artigas quería que Buenos Aires decidiera por todas las provincias.”"
+     },
+     "options": [
+      {
+       "es": "Artigas quería autonomía: que cada provincia tomara sus propias decisiones"
+      },
+      {
+       "es": "Artigas quería volver a depender de España"
+      },
+      {
+       "es": "Artigas quería un Director Supremo"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "“La Asamblea del Año XIII declaró la independencia en 1813.”"
+     },
+     "options": [
+      {
+       "es": "La independencia se declaró el 9 de julio de 1816, en el Congreso de Tucumán"
+      },
+      {
+       "es": "La independencia se declaró el 25 de mayo de 1810"
+      },
+      {
+       "es": "La independencia nunca se declaró"
+      }
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "type": "sort",
+   "name": {
+    "es": "¿Centralismo o autonomía?"
+   },
+   "intro": {
+    "es": "¿Esta idea va con Buenos Aires o con Artigas?"
+   },
+   "bins": [
+    {
+     "es": "Centralismo (Buenos Aires)"
+    },
+    {
+     "es": "Autonomía (Artigas)"
+    }
+   ],
+   "items": [
+    {
+     "label": {
+      "es": "Todas las decisiones se toman desde Buenos Aires."
+     },
+     "bin": 0
+    },
+    {
+     "label": {
+      "es": "Cada provincia elige sus autoridades y sus leyes."
+     },
+     "bin": 1
+    },
+    {
+     "label": {
+      "es": "Un Director Supremo concentra todo el poder."
+     },
+     "bin": 0
+    },
+    {
+     "label": {
+      "es": "Las provincias se unen como iguales."
+     },
+     "bin": 1
+    },
+    {
+     "label": {
+      "es": "El Directorio declara a Artigas fuera de la ley."
+     },
+     "bin": 0
+    },
+    {
+     "label": {
+      "es": "Las provincias del Litoral no envían diputados a Tucumán."
+     },
+     "bin": 1
+    },
+    {
+     "label": {
+      "es": "Protector de los Pueblos Libres."
+     },
+     "bin": 1
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "name": {
+    "es": "¿Quién fue?"
+   },
+   "intro": {
+    "es": "Elegí el personaje correcto."
+   },
+   "items": [
+    {
+     "prompt": {
+      "es": "Último virrey del Río de la Plata."
+     },
+     "options": [
+      {
+       "es": "Cisneros"
+      },
+      {
+       "es": "Saavedra"
+      },
+      {
+       "es": "Posadas"
+      },
+      {
+       "es": "Laprida"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Presidente de la Primera Junta, jefe del Regimiento de Patricios."
+     },
+     "options": [
+      {
+       "es": "Saavedra"
+      },
+      {
+       "es": "Moreno"
+      },
+      {
+       "es": "Belgrano"
+      },
+      {
+       "es": "Pueyrredón"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Creó la bandera en 1812 y en Tucumán propuso un rey descendiente de los incas."
+     },
+     "options": [
+      {
+       "es": "Belgrano"
+      },
+      {
+       "es": "San Martín"
+      },
+      {
+       "es": "Artigas"
+      },
+      {
+       "es": "Castelli"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Líder de la Banda Oriental, defendía la autonomía de las provincias."
+     },
+     "options": [
+      {
+       "es": "Artigas"
+      },
+      {
+       "es": "Güemes"
+      },
+      {
+       "es": "Posadas"
+      },
+      {
+       "es": "Saavedra"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Primer Director Supremo; declaró a Artigas fuera de la ley."
+     },
+     "options": [
+      {
+       "es": "Posadas"
+      },
+      {
+       "es": "Pueyrredón"
+      },
+      {
+       "es": "Rondeau"
+      },
+      {
+       "es": "Alvear"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Gobernador de Cuyo; preparaba el cruce de los Andes y exigía declarar la independencia."
+     },
+     "options": [
+      {
+       "es": "San Martín"
+      },
+      {
+       "es": "Belgrano"
+      },
+      {
+       "es": "Güemes"
+      },
+      {
+       "es": "Laprida"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Defendió la frontera norte con un ejército de gauchos salteños."
+     },
+     "options": [
+      {
+       "es": "Güemes"
+      },
+      {
+       "es": "Rondeau"
+      },
+      {
+       "es": "Artigas"
+      },
+      {
+       "es": "Moreno"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "El Congreso de Tucumán lo nombró Director Supremo en 1816."
+     },
+     "options": [
+      {
+       "es": "Pueyrredón"
+      },
+      {
+       "es": "Posadas"
+      },
+      {
+       "es": "Saavedra"
+      },
+      {
+       "es": "Cisneros"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Presidió la sesión del 9 de julio de 1816."
+     },
+     "options": [
+      {
+       "es": "Laprida"
+      },
+      {
+       "es": "Pueyrredón"
+      },
+      {
+       "es": "Belgrano"
+      },
+      {
+       "es": "Paso"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": {
+      "es": "Llegó a sargento mayor en el Ejército del Norte."
+     },
+     "options": [
+      {
+       "es": "María Remedios del Valle"
+      },
+      {
+       "es": "Macacha Güemes"
+      },
+      {
+       "es": "Cornelio Saavedra"
+      },
+      {
+       "es": "Juan Larrea"
+      }
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "type": "model",
+   "name": {
+    "es": "Para la carpeta"
+   },
+   "intro": {
+    "es": "Ejemplos de respuesta a las actividades del libro. Escribilas con tus palabras."
+   },
+   "blocks": [
+    {
+     "q": {
+      "es": "Causas: A) la Junta Central de Sevilla se disuelve; B) las ciudades españolas forman Juntas de Gobierno."
+     },
+     "lines": {
+      "es": [
+       "A) En 1810 los ejércitos de Napoleón invadieron toda la península.",
+       "B) No reconocían a José Bonaparte: lo consideraban un rey ilegítimo, y querían gobernar en nombre de Fernando VII."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "¿Por qué la Primera Junta estuvo integrada por abogados criollos, un militar, un sacerdote y dos comerciantes españoles? ¿Qué dificultades debían enfrentar?"
+     },
+     "lines": {
+      "es": [
+       "Reunía a personas de distintos grupos para tener el apoyo de toda la sociedad.",
+       "Debía enfrentar la guerra con España, organizar un gobierno nuevo y lograr que las demás ciudades lo aceptaran."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "¿Cómo se formaron los ejércitos patrios? ¿Qué papel cumplían las mujeres?"
+     },
+     "lines": {
+      "es": [
+       "Con las milicias de las invasiones inglesas y con trabajadores rurales y urbanos. Como muchos no querían ir, se usaron levas forzosas: hombres de 18 a 40 años.",
+       "Las mujeres espiaban, cocinaban, curaban heridos y organizaban campamentos; algunas pelearon, como María Remedios del Valle y Macacha Güemes."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "Según Luciana Sabina, ¿por qué la Asamblea del Año XIII no cumplió sus objetivos?"
+     },
+     "lines": {
+      "es": [
+       "No declaró la independencia ni dictó la Constitución, que eran sus fines principales.",
+       "Y no abolió la esclavitud: solo declaró la libertad de vientres y prohibió traer esclavos; la compraventa siguió."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "¿Cuáles fueron las causas que llevaron a convocar el Congreso de Tucumán?"
+     },
+     "lines": {
+      "es": [
+       "En 1814 Fernando VII volvió al trono y mandó tropas a América; en 1815 se perdió el Alto Perú en Sipe Sipe.",
+       "La revolución estaba en peligro y, sin una declaración formal, España podía volver a dominar en forma legítima."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "Expliquen el significado de: independencia y autonomía."
+     },
+     "lines": {
+      "es": [
+       "Independencia: no depender de otro país; gobernarse por sí mismo.",
+       "Autonomía: que una parte de un conjunto (por ejemplo, una provincia) pueda tomar sus propias decisiones, con sus propias leyes."
+      ]
+     }
+    },
+    {
+     "q": {
+      "es": "¿Qué argumentó San Martín para exigir que declararan la independencia?"
+     },
+     "lines": {
+      "es": [
+       "Que era ridículo tener moneda, bandera y escudo, y hacerle la guerra al rey del que se decía que dependían.",
+       "Sin declarar la independencia, su ejército era rebelde; por eso no avanzaría hasta que se declarara."
+      ]
+     }
+    }
+   ]
+  }
+ ]
+};
+mountActivity(PAGE);
+</script>
+</body>
+</html>
